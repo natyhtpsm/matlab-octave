@@ -3,7 +3,7 @@ close all;
 clear all;
 
 syms x;
-f = exp(x)-1; ##Especificar a função
+f = @(x) 5*x - exp(x)-1; ##Especificar a função
 
 n = input('Casas decimais:');
 eps = 5*10^-(n+1)
